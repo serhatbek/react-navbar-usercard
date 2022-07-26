@@ -1,11 +1,11 @@
-import Users from '../../Users/Users';
 import './Home.scss';
+import Users from '../../components/Users/Users';
 
 const Home = () => {
   return (
     <div className='home'>
-      <h1>Users</h1>
       <div className='container'>
+        <h1>Users</h1>
         <div className='box'>
           <Users />
         </div>
