@@ -1,4 +1,4 @@
-import UserCard from '../../UserCard/UserCard';
+import Users from '../../Users/Users';
 import './Home.scss';
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
       <h1>Users</h1>
       <div className='container'>
         <div className='box'>
-          <UserCard />
+          <Users />
         </div>
       </div>
     </div>
