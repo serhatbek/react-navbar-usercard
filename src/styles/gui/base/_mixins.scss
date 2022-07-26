@@ -1,0 +1,35 @@
+$phone-max: 600px;
+$tablet-max: 768px;
+$laptop-max: 992px;
+$wrap-max: 996px;
+$large-max: 1200px;
+
+@mixin phone {
+  @media (max-width: $phone-max) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $laptop-max) {
+    @content;
+  }
+}
+
+@mixin wrap {
+  @media (max-width: $wrap-max) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: $large-max) {
+    @content;
+  }
+}

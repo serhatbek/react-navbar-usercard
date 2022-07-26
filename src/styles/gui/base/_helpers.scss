@@ -1,0 +1,30 @@
+.container {
+  max-width: 1980px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.align-center {
+  align-items: center;
+}
