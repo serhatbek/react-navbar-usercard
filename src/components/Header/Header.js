@@ -1,13 +1,18 @@
+import { NavLink } from 'react-router-dom';
+
 import Navbar from '../Navbar/Navbar';
+import './Header.scss';
 
 const Header = () => {
   return (
-    <Header>
+    <header className='header'>
       <div className='container'>
-        <h1>Logo</h1>
+        <NavLink to='/'>
+          <h1>Logo</h1>
+        </NavLink>
         <Navbar />
       </div>
-    </Header>
+    </header>
   );
 };
 

@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    color: #fff;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--active {
+      color: green;
+    }
+  }
+}

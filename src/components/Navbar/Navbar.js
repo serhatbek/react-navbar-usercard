@@ -1,9 +1,33 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Navbar.scss';
 
 const Navbar = () => {
   return (
-    <nav>
-      <span>Home</span>
+    <nav className='navbar'>
+      <NavLink
+        to='/'
+        className={({ isActive }) =>
+          isActive ? 'navbar__link navbar__link--active' : 'navbar__link'
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to='/about'
+        className={({ isActive }) =>
+          isActive ? 'navbar__link navbar__link--active' : 'navbar__link'
+        }
+      >
+        About
+      </NavLink>
+      <NavLink
+        to='/contact'
+        className={({ isActive }) =>
+          isActive ? 'navbar__link navbar__link--active' : 'navbar__link'
+        }
+      >
+        Contact
+      </NavLink>
     </nav>
   );
 };
