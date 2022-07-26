@@ -1,0 +1,53 @@
+@import '../../styles/gui/base/colors';
+
+.user-card {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 16px -4px #000;
+  border-radius: 20px;
+
+  &__img {
+    height: 200px;
+    background: linear-gradient(
+      345deg,
+      rgba(39, 106, 234, 1) 1%,
+      rgba(191, 54, 82, 1) 100%
+    );
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    figure {
+      width: 150px;
+      height: 150px;
+      border: 4px solid $bg2;
+      border-radius: 50%;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__info {
+    background-color: $bg2;
+    color: $text2;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 40px 15px;
+    text-align: center;
+
+    span {
+      display: block;
+
+      &:first-child {
+        font-weight: 700;
+      }
+
+      &:last-child {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
