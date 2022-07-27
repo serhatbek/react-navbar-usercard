@@ -19,7 +19,7 @@ const Users = () => {
   }, []);
   return (
     <>
-      {users.map((user) => (
+      {users?.map((user) => (
         <UserCard
           key={user.dob.date}
           picture={user.picture.large}

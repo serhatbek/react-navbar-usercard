@@ -2,8 +2,48 @@
 
 .single-product {
   padding: 70px 0;
+  text-align: center;
 
   a {
     color: $text1;
+  }
+
+  .product {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow: 0 12px 12px 4px #000;
+    border-radius: 10px;
+    text-align: left;
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+
+    figure {
+      width: 500px;
+      background-color: #fff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    div {
+      margin: auto 0;
+      padding: 20px;
+      span {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
   }
 }
