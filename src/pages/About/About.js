@@ -1,5 +1,11 @@
+import BasicFormic from '../../components/Form/BasicFormic';
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div className='container'>
+      <BasicFormic />
+    </div>
+  );
 };
 
 export default About;
