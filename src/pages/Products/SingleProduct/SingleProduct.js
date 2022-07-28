@@ -24,7 +24,6 @@ const SingleProduct = () => {
     (product) => parseInt(productId) === product.id
   );
   // const { image, title, desc, category, price } = product;
-  console.log('object', product);
 
   return (
     <div className='container'>

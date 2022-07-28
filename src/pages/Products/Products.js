@@ -13,7 +13,6 @@ const Products = () => {
     const data = await response.data;
 
     setProducts(data);
-    console.log(data);
   };
 
   useEffect(() => {

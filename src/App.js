@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { useState } from 'react';
 import './styles/styles.scss';
 
 import Home from './pages/Home/Home';
@@ -8,8 +9,11 @@ import Error from './pages/Error/Error';
 import SharedLayout from './pages/Layout/SharedLayout';
 import Products from './pages/Products/Products';
 import SingleProduct from './pages/Products/SingleProduct/SingleProduct';
+import { useState } from 'react';
 
 const App = () => {
+  // const [user, setUser] = useState();
+
   return (
     <BrowserRouter>
       <Routes>
