@@ -1,9 +1,9 @@
-import BasicFormic from '../../components/Form/BasicFormic';
+import BasicFormik from '../../components/Form/BasicFormik';
 
 const About = () => {
   return (
     <div className='container'>
-      <BasicFormic />
+      <BasicFormik />
     </div>
   );
 };
