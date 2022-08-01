@@ -130,28 +130,3 @@ const BasicFormik = () => {
 };
 
 export default BasicFormik;
-
-// import { Formik, Field, Form } from 'formik';
-
-{
-  /* <Form>
-<label htmlFor='firstName'>First Name</label>
-<Field id='firstName' name='firstName' placeholder='Jane' />
-<br />
-<br />
-<label htmlFor='lastName'>Last Name</label>
-<Field id='lastName' name='lastName' placeholder='Doe' />
-<br />
-<br />
-<label htmlFor='email'>Email</label>
-<Field
-  id='email'
-  name='email'
-  placeholder='jane@acme.com'
-  type='email'
-/>
-<br />
-<br />
-<button type='submit'>Submit</button>
-</Form> */
-}
