@@ -1,0 +1,23 @@
+.btn {
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  &--green {
+    background-color: rgb(184, 86, 135);
+    color: #fff;
+  }
+
+  &--small {
+    padding: 6px 18px;
+  }
+
+  &--medium {
+    padding: 8px 24px;
+  }
+
+  &--large {
+    width: 100%;
+    padding: 12px 28px;
+  }
+}
