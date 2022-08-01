@@ -12,7 +12,7 @@ const Header = () => {
           <h1>Logo</h1>
         </NavLink>
         <Navbar />
-        <Button btnStyle='btn--green' btnSize='btn--medium' btnName='Login' />
+        {/* <Button btnStyle='btn--green' btnSize='btn--medium' btnName='Login' /> */}
       </div>
     </header>
   );

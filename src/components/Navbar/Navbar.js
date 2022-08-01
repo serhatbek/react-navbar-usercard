@@ -12,6 +12,7 @@ const Navbar = () => {
       >
         Home
       </NavLink>
+
       <NavLink
         to='/about'
         className={({ isActive }) =>
@@ -20,6 +21,7 @@ const Navbar = () => {
       >
         About
       </NavLink>
+
       <NavLink
         to='/products'
         className={({ isActive }) =>
@@ -28,6 +30,7 @@ const Navbar = () => {
       >
         Products
       </NavLink>
+
       <NavLink
         to='/contact'
         className={({ isActive }) =>
@@ -35,6 +38,15 @@ const Navbar = () => {
         }
       >
         Contact
+      </NavLink>
+
+      <NavLink
+        to='/login'
+        className={({ isActive }) =>
+          isActive ? 'navbar__link navbar__link--active' : 'navbar__link'
+        }
+      >
+        Login
       </NavLink>
     </nav>
   );

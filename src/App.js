@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import { useState } from 'react';
+import { useState } from 'react';
 import './styles/styles.scss';
 
 import Home from './pages/Home/Home';
@@ -9,9 +9,11 @@ import Error from './pages/Error/Error';
 import SharedLayout from './pages/Layout/SharedLayout';
 import Products from './pages/Products/Products';
 import SingleProduct from './pages/Products/SingleProduct/SingleProduct';
+import Login from './pages/Login/Login';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 const App = () => {
-  // const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
 
   return (
     <BrowserRouter>
@@ -22,6 +24,11 @@ const App = () => {
           <Route path='products' element={<Products />} />
           <Route path='products/:productId' element={<SingleProduct />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='login' element={<Login setUser={setUser}></Login>} />
+          <Route
+            path='dashboard'
+            element={<Dashboard user={user}></Dashboard>}
+          />
           <Route path='*' element={<Error />} />
         </Route>
       </Routes>

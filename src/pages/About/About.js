@@ -1,10 +1,10 @@
 import BasicFormik from '../../components/Form/BasicFormik';
-import LoginForm from '../../components/Form/LoginForm';
+import LoginFormEx from '../../components/Form/LoginFormEx';
 
 const About = () => {
   return (
     <div className='container'>
-      <LoginForm />
+      <LoginFormEx />
       <br />
       <br />
       <BasicFormik />
