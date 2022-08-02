@@ -1,17 +1,32 @@
 import { useFormik } from 'formik';
 import validationSchema from './validationSchema';
+import { useNavigate } from 'react-router-dom';
+// import { useState } from 'react';
 import Button from '../Button/Button';
 import './LoginForm.scss';
 
-const LoginForm = () => {
+const LoginForm = ({}) => {
+  const navigate = useNavigate();
   const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
     useFormik({
       initialValues: {
+        name: '',
         email: '',
         password: '',
         passwordConfirm: '',
       },
-      onSubmit: (values) => {},
+      onSubmit: (values) => {
+        // setUser([
+        //   {
+        //     name: values.name,
+        //     email: values.email,
+        //     password: values.password,
+        //     passwordConfirm: values.passwordConfirm,
+        //   },
+        // ]);
+        navigate('/dashboard');
+        console.log(values);
+      },
       validationSchema,
     });
 
@@ -19,6 +34,23 @@ const LoginForm = () => {
     <>
       <form className='login-form' onSubmit={handleSubmit}>
         <h3>Login</h3>
+        <div className='form__row'>
+          <label className='visually-hidden' htmlFor='name'>
+            Email
+          </label>
+          <input
+            name='name'
+            type='text'
+            placeholder='Enter your name'
+            value={values.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {errors.name && touched.name && (
+            <div className='error'>{errors.name}</div>
+          )}
+        </div>
+
         <div className='form__row'>
           <label className='visually-hidden' htmlFor='email'>
             Email
@@ -75,7 +107,7 @@ const LoginForm = () => {
             type='submit'
             btnStyle='btn--green'
             btnSize='btn--large'
-            btnName='Login'
+            btnName='Submit'
           />
         </div>
       </form>

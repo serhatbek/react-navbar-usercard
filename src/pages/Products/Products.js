@@ -22,7 +22,7 @@ const Products = () => {
   return (
     <div className='products'>
       <div className='container'>
-        <h2>Products</h2>
+        {/* <h2>Products</h2> */}
         <div className='box'>
           {products.map((product) => (
             <article className='product' key={product.id}>
